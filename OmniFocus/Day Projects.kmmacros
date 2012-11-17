@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>-- Day Projects---- Created by Zettt on 2011-11-28-- Mac OS X Screencasts.---- This script creates 5 new projects containing only the date-- of the next 5 days as their name. -- I use these "Day Projects" to put general stuff that I need to-- do that day, but aren't big enough to be in their own project.-- I fill the current days' project with tasks as part-- of my daily review. On Mondays I go through my projects -- and tasks and assign tasks to dates. You probably-- get the idea.---- Note: I like the dates being DD.MM.YYYY. -- Leading zeros, no month names, four digit years.-- In case you want to modify the names,-- `man date` is your friend.---- 1.0: Initial release-- 1.1: Added value `start` so you get calendar sync and --        alarm sounds on iOS-- 1.2: Cleaner start time (now uses a string, e.g. "10:00:00")--        Added hint for shorter version.-- 1.3: Now you can set your work week to 5, 6 or 7 days. -- 1.4: Converted all projects to single action lists-- 7 or 5 days?set totalDays to 7-- get current day and create names of projects-- assuming you only work 5 days a weekset day1 to do shell script "date -v +0d +'%a: %d.%m.%Y'"set day2 to do shell script "date -v +1d +'%a: %d.%m.%Y'"set day3 to do shell script "date -v +2d +'%a: %d.%m.%Y'"set day4 to do shell script "date -v +3d +'%a: %d.%m.%Y'"set day5 to do shell script "date -v +4d +'%a: %d.%m.%Y'"if totalDays = 6 then	set day6 to do shell script "date -v +5d +'%a: %d.%m.%Y'"else if totalDays = 7 then	set day6 to do shell script "date -v +5d +'%a: %d.%m.%Y'"	set day7 to do shell script "date -v +6d +'%a: %d.%m.%Y'"end if-- OmniFocus wants to have date objects for Start--get current date as date objectsset theDate to (current date)set d to day of theDateset m to month of theDate as integerset y to year of theDateset startTime to "10:00:00"set startDay1 to (date (d &amp; "/" &amp; m &amp; "/" &amp; y &amp; " " &amp; startTime as string)) + 0 * daysset startDay2 to (date (d &amp; "/" &amp; m &amp; "/" &amp; y &amp; " " &amp; startTime as string)) + 1 * daysset startDay3 to (date (d &amp; "/" &amp; m &amp; "/" &amp; y &amp; " " &amp; startTime as string)) + 2 * daysset startDay4 to (date (d &amp; "/" &amp; m &amp; "/" &amp; y &amp; " " &amp; startTime as string)) + 3 * daysset startDay5 to (date (d &amp; "/" &amp; m &amp; "/" &amp; y &amp; " " &amp; startTime as string)) + 4 * daysset startTimeWeekend to "08:00:00"if totalDays = 6 then	set startDay6 to (date (d &amp; "/" &amp; m &amp; "/" &amp; y &amp; " " &amp; startTimeWeekend as string)) + 5 * dayselse if totalDays = 7 then	set startDay6 to (date (d &amp; "/" &amp; m &amp; "/" &amp; y &amp; " " &amp; startTimeWeekend as string)) + 5 * days	set startDay7 to (date (d &amp; "/" &amp; m &amp; "/" &amp; y &amp; " " &amp; startTimeWeekend as string)) + 6 * daysend if(*
+  This is an alternative version, which looks a *lot* shorter, but less understandable at first.
+  The lines below make all date code from `set theDate…` to `set startDay5` unnecessary.
+
+-- OmniFocus wants to have date objects for Start
+--get current date as date objects
+set startDay1 to (current date) + 0 * daysset startDay2 to (current date) + 1 * daysset startDay3 to (current date) + 2 * daysset startDay4 to (current date) + 3 * daysset startDay5 to (current date) + 4 * days
+  
+-- assign all days a start time of 10:00:00-- time in seconds from 0 hoursset {startDay1's time, startDay2's time, startDay3's time, startDay4's time, startDay5's time} to {36000, 36000, 36000, 36000, 36000}*)-- create new projects in OmniFocustell application "OmniFocus"	tell default document		set dayProjects to folder "Day Projects"		tell dayProjects			set projectDay1 to make new project with properties {name:day1, start date:startDay1, singleton action holder:true}			set projectDay2 to make new project with properties {name:day2, start date:startDay2, singleton action holder:true}			set projectDay3 to make new project with properties {name:day3, start date:startDay3, singleton action holder:true}			set projectDay4 to make new project with properties {name:day4, start date:startDay4, singleton action holder:true}			set projectDay5 to make new project with properties {name:day5, start date:startDay5, singleton action holder:true}						if totalDays = 6 then				set projectDay6 to make new project with properties {name:day6, start date:startDay6, singleton action holder:true}			else if totalDays = 7 then				set projectDay6 to make new project with properties {name:day6, start date:startDay6, singleton action holder:true}				set projectDay7 to make new project with properties {name:day7, start date:startDay7, singleton action holder:true}			end if					end tell	end tellend tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>Variable</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Day Projects</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>A900172B-1BE6-4E05-A9E3-A2528103F576</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Keyboard Maestro Macros Repo (OmniFocus)</string>
+		<key>UID</key>
+		<string>1F08C0C4-07F9-477B-BE01-AC8B2D0953CC</string>
+	</dict>
+</array>
+</plist>
