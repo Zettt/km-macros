@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string></string>
+						<key>Title</key>
+						<string>Save frontmost app in variable</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%CurrentApplication%</string>
+						<key>Variable</key>
+						<string>CurrentApp</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string></string>
+						<key>Title</key>
+						<string>Activate app that was frontmost when macro was run</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>SetApplicationByName</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>UseVariable</string>
+						<key>Variable</key>
+						<string>CurrentApp</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%Delete%</string>
+						<key>Variable</key>
+						<string>CurrentApp</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Switch back to frontmost app</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>23E146B4-5ADD-487F-947D-CC6F0B8B5132</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Keyboard Maestro Macros Repo</string>
+		<key>UID</key>
+		<string>FDC52ACB-F36A-424D-8746-FA279F0A39A9</string>
+	</dict>
+</array>
+</plist>
