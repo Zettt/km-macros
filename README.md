@@ -1,1 +1,1 @@
-My favorite Keyboard Maestro macros.
+My favorite Keyboard Maestro macros. I anticipate having some descriptive text here for the macros. Until then, please have a look at the commit messages!
