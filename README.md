@@ -18,6 +18,8 @@ My favorite Keyboard Maestro macros. I anticipate having some descriptive text h
 
 ### OmniFocus ###
 	
+* Copy OmniFocus Item URL to Clipboard: Copies OmniFocus URL to clipboard for reference somewhere else. * Day Projects: I use a folder labelled "Day Projects", where I have one project for each day of the week. I assign tasks that I want to do over the week to this projects. The projects start on each respective day at 10am. See [this Gist](https://gist.github.com/1401813) for complete history.* Mark projects active, completed, dropped, on hold: Press ⌃A, ⌃C, ⌃D, ⌃H.
+
 ### Special Characters ###
 
 ### System ###
