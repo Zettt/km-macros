@@ -14,8 +14,10 @@ My favorite Keyboard Maestro macros. I anticipate having some descriptive text h
 
 ### Mail ###
 
-### OmniFocus ###
+* Copy Message URL to clipboard: Copies the message URL of a selected message to the clipboard. Useful for OmniFocus. Create a task that links back to the original message.* Print iTunes Receipt: Macro to print mail as PDF. **Note**: Requires you to have [⌘P set as "Save as PDF…" in System Preferences](http://macsparky.com/blog/2008/3/19/keyboard-shortcut-for-save-as-pdf-in-os-x.html). 
 
+### OmniFocus ###
+	
 ### Special Characters ###
 
 ### System ###
