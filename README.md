@@ -38,12 +38,18 @@ Macros which use the "Filter Clipboard" action. Possibilities: calculate selecte
 
 ### Windows ###
 
+Manipulate windows with Keyboard Maestro:
 
+* Move by 1px or 25px.
+* Resize horizontally/vertically by ± 1px or 25px.
+* Resize proportionally
+* Several example resize presets
+* Measure window: for use in previous resize presets or in the following Set Window Size macro.
+* Set Window Size: First measures the frontmost window, then prompts the user for new size.
+* Center/maximize window
+* Where's my mouse?: Draws a circle on the screen in case you can't find your cursor anymore.
 
-
-
-
-
+Best practice tip: Set macro group to activate and deactivate on shortcut. (I've set this to ⌃⌥W)
 
 ### Participate ###
 
