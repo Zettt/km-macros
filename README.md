@@ -1,4 +1,4 @@
-My favorite Keyboard Maestro macros. I anticipate having some descriptive text here for the macros. Until then, please have a look at the commit messages!
+My favorite Keyboard Maestro macros. Some of these are meant to be executed in a certain app only. This is normally the case when there is a "general" shortcut set like F1, ↑, or ↓. I have every one of these as separate groups (separated by app they're available in). 
 
 ### Clipboard ###
 
@@ -15,6 +15,10 @@ My favorite Keyboard Maestro macros. I anticipate having some descriptive text h
 ### Mail ###
 
 * Copy Message URL to clipboard: Copies the message URL of a selected message to the clipboard. Useful for OmniFocus. Create a task that links back to the original message.* Print iTunes Receipt: Macro to print mail as PDF. **Note**: Requires you to have [⌘P set as "Save as PDF…" in System Preferences](http://macsparky.com/blog/2008/3/19/keyboard-shortcut-for-save-as-pdf-in-os-x.html). 
+
+### Markdown ###
+
+[My Markdown library](https://github.com/Zettt/km-markdown-library) is now part of this repository. Read the other readme on how to use these.
 
 ### OmniFocus ###
 	
