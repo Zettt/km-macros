@@ -30,6 +30,8 @@ Various macros to insert special or uncommon characters easily, such as Emojis o
 
 ### Text ###
 
+Macros which use the "Filter Clipboard" action. Possibilities: calculate selected text, count characters/words/lines, encode/decode HTML Entities, Percent Encode text, lowercase/UPPERCASE/TitleCase text, smarten/straighten quotes, remove style from text.
+
 ### TextExpander ###
 
 ### Windows ###
