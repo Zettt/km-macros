@@ -82,7 +82,7 @@ do shell script "/System/Library/CoreServices/Menu\\ Extras/User.menu/Contents/R
 				<key>IsActive</key>
 				<true/>
 				<key>Name</key>
-				<string>Login sombody...</string>
+				<string>Login sombody…</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
