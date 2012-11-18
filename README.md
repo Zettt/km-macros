@@ -34,6 +34,8 @@ Macros which use the "Filter Clipboard" action. Possibilities: calculate selecte
 
 ### TextExpander ###
 
+* Change expansion mode of a selected TextExpander snippet. It's an example on how to create shortcuts for a menu that is otherwise not reachable via shortcuts. Default shortcut is F1, F2, and F3. Set to separate macro group to be only available in TextExpander!
+
 ### Windows ###
 
 
