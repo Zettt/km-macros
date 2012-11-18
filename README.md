@@ -6,6 +6,8 @@ My favorite Keyboard Maestro macros. I anticipate having some descriptive text h
 
 ### Finder ###
 
+* Symbolic Link: Shows Create symbolic links using Keyboard Maestro. 
+
 ### General Use ###
 
 ### Mail ###
