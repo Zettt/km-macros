@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>ToggleWithTrigger</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<true/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>13</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%WindowSize%1%</string>
+						<key>Variable</key>
+						<string>WindowSize</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>DisplayBriefly</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Paste</key>
+						<false/>
+						<key>Text</key>
+						<string>%Variable%WindowSize%</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%Delete%</string>
+						<key>Variable</key>
+						<string>WindowSize</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Measure Window</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>448EFF12-A213-452C-9485-9CC2D33AE278</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>6144</integer>
+		<key>Name</key>
+		<string>Keyboard Maestro Macros Repo (Windows)</string>
+		<key>UID</key>
+		<string>5EF0E19C-5967-465B-A407-B720C09294D0</string>
+	</dict>
+</array>
+</plist>
