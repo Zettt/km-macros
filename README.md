@@ -10,6 +10,8 @@ My favorite Keyboard Maestro macros. I anticipate having some descriptive text h
 
 ### General Use ###
 
+* Switch back to frontmost app: I'm using this in my [Markdown library](https://github.com/Zettt/km-markdown-library) so the user can search for information somewhere else while the macro is running. This has no purpose other than showing how to do it. It's a demonstration for your own inspiration.
+
 ### Mail ###
 
 ### OmniFocus ###
