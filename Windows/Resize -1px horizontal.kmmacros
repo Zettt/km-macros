@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>ToggleWithTrigger</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<true/>
+		<key>IsActive</key>
+		<true/>
+		<key>KeyCode</key>
+		<integer>13</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ResizeWindowBy</string>
+						<key>Horizontal</key>
+						<integer>-1</integer>
+						<key>HorizontalExpression</key>
+						<string>-1</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ManipulateWindow</string>
+						<key>Targeting</key>
+						<string>FrontWindow</string>
+						<key>Vertical</key>
+						<integer>0</integer>
+						<key>VerticalExpression</key>
+						<string>0</string>
+						<key>WindowIndex</key>
+						<integer>2</integer>
+						<key>WindowIndexExpression</key>
+						<string>2</string>
+						<key>WindowName</key>
+						<string></string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Resize -1px horizontal</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>123</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2048</integer>
+						<key>TriggerRepeat</key>
+						<false/>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>783D687E-35C7-4D31-B9DA-76E324A57147</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>6144</integer>
+		<key>Name</key>
+		<string>Keyboard Maestro Macros Repo (Windows)</string>
+		<key>UID</key>
+		<string>5EF0E19C-5967-465B-A407-B720C09294D0</string>
+	</dict>
+</array>
+</plist>
