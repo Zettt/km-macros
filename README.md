@@ -26,6 +26,8 @@ Various macros to insert special or uncommon characters easily, such as Emojis o
 
 ### System ###
 
+* Keyboard Cleaner Maestro: See [this post](http://mosx.tumblr.com/post/29045607939/keyboard-cleaner-maestro) for thorough explanation and context. Once executed this will launch TextEdit, maximize the window and **block all input (mouse and keyboard)**. This way you can safely clean your Mac and keyboard. Once done press ⇧⌃⌘ and wait a little. The window will close itself and TextEdit will quit. **Be careful with this!*** Login sombody…: Quickly login as someone else.
+
 ### Text ###
 
 ### TextExpander ###
