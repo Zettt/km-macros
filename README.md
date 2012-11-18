@@ -1,5 +1,32 @@
 My favorite Keyboard Maestro macros. I anticipate having some descriptive text here for the macros. Until then, please have a look at the commit messages!
 
+### Clipboard ###
+
+### Finder ###
+
+### General Use ###
+
+### Mail ###
+
+### OmniFocus ###
+
+### Special Characters ###
+
+### System ###
+
+### Text ###
+
+### TextExpander ###
+
+### Windows ###
+
+
+
+
+
+
+
+
 ### Participate ###
 
 Feel free to send me Pull Requests with your Keyboard Maestro macros.  
