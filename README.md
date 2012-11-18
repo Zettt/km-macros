@@ -2,6 +2,8 @@ My favorite Keyboard Maestro macros. I anticipate having some descriptive text h
 
 ### Clipboard ###
 
+* Append Selection to Clipboard: Puts selected text on clipboard (⌘C) and appends it to the previous entry.* Manipulate Clipboard: Displays the clipboard contents in a text field for manipulation. Saves changes back to clipboard.
+
 ### Finder ###
 
 ### General Use ###
