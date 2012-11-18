@@ -22,6 +22,8 @@ My favorite Keyboard Maestro macros. I anticipate having some descriptive text h
 
 ### Special Characters ###
 
+Various macros to insert special or uncommon characters easily, such as Emojis or control characters like ⌘, ⌃ and ⇧.
+
 ### System ###
 
 ### Text ###
