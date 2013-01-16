@@ -2,11 +2,17 @@ My favorite Keyboard Maestro macros. Some of these are meant to be executed in a
 
 ### Clipboard ###
 
-* Append Selection to Clipboard: Puts selected text on clipboard (⌘C) and appends it to the previous entry.* Manipulate Clipboard: Displays the clipboard contents in a text field for manipulation. Saves changes back to clipboard.
+* Append Selection to Clipboard: Puts selected text on clipboard (⌘C) and appends it to the previous entry.
+* Manipulate Clipboard: Displays the clipboard contents in a text field for manipulation. Saves changes back to clipboard.
 
 ### Finder ###
 
 * Symbolic Link: Shows Create symbolic links using Keyboard Maestro. 
+
+### Final Cut Pro X ###
+
+* Find…: This macro clicks some 200px away from the bottom right corner to highlight the search field in the effects browser. (which, annoyingly, can't be a shortcut assigned to)
+* Switch Media: Two macros (activated with F1 and F2) to switch between proxy and high-quality/original media. Essentially what happens is the preference window opens, the second icons gets clicks, and then one of the two radio buttons before the window closes again.
 
 ### General Use ###
 
@@ -14,7 +20,8 @@ My favorite Keyboard Maestro macros. Some of these are meant to be executed in a
 
 ### Mail ###
 
-* Copy Message URL to clipboard: Copies the message URL of a selected message to the clipboard. Useful for OmniFocus. Create a task that links back to the original message.* Print iTunes Receipt: Macro to print mail as PDF. **Note**: Requires you to have [⌘P set as "Save as PDF…" in System Preferences](http://macsparky.com/blog/2008/3/19/keyboard-shortcut-for-save-as-pdf-in-os-x.html). 
+* Copy Message URL to clipboard: Copies the message URL of a selected message to the clipboard. Useful for OmniFocus. Create a task that links back to the original message.
+* Print iTunes Receipt: Macro to print mail as PDF. **Note**: Requires you to have [⌘P set as "Save as PDF…" in System Preferences](http://macsparky.com/blog/2008/3/19/keyboard-shortcut-for-save-as-pdf-in-os-x.html). 
 
 ### Markdown ###
 
@@ -22,7 +29,9 @@ My favorite Keyboard Maestro macros. Some of these are meant to be executed in a
 
 ### OmniFocus ###
 	
-* Copy OmniFocus Item URL to Clipboard: Copies OmniFocus URL to clipboard for reference somewhere else. * Day Projects: I use a folder labelled "Day Projects", where I have one project for each day of the week. I assign tasks that I want to do over the week to this projects. The projects start on each respective day at 10am. See [this Gist](https://gist.github.com/1401813) for complete history.* Mark projects active, completed, dropped, on hold: Press ⌃A, ⌃C, ⌃D, ⌃H.
+* Copy OmniFocus Item URL to Clipboard: Copies OmniFocus URL to clipboard for reference somewhere else. 
+* Day Projects: I use a folder labelled "Day Projects", where I have one project for each day of the week. I assign tasks that I want to do over the week to this projects. The projects start on each respective day at 10am. See [this Gist](https://gist.github.com/1401813) for complete history.
+* Mark projects active, completed, dropped, on hold: Press ⌃A, ⌃C, ⌃D, ⌃H.
 
 ### Special Characters ###
 
@@ -30,7 +39,8 @@ Various macros to insert special or uncommon characters easily, such as Emojis o
 
 ### System ###
 
-* Keyboard Cleaner Maestro: See [this post](http://mosx.tumblr.com/post/29045607939/keyboard-cleaner-maestro) for thorough explanation and context. Once executed this will launch TextEdit, maximize the window and **block all input (mouse and keyboard)**. This way you can safely clean your Mac and keyboard. Once done press ⇧⌃⌘ and wait a little. The window will close itself and TextEdit will quit. **Be careful with this!*** Login sombody…: Quickly login as someone else.
+* Keyboard Cleaner Maestro: See [this post](http://mosx.tumblr.com/post/29045607939/keyboard-cleaner-maestro) for thorough explanation and context. Once executed this will launch TextEdit, maximize the window and **block all input (mouse and keyboard)**. This way you can safely clean your Mac and keyboard. Once done press ⇧⌃⌘ and wait a little. The window will close itself and TextEdit will quit. **Be careful with this!**
+* Login sombody…: Quickly login as someone else.
 
 ### Text ###
 
