@@ -1,5 +1,8 @@
 My favorite Keyboard Maestro macros. Some of these are meant to be executed in a certain app only. This is normally the case when there is a "general" shortcut set like F1, ↑, or ↓. I have every one of these as separate groups (separated by app they're available in). 
 
+**Download:** You can download this entire repository by clicking on [here](https://github.com/Zettt/km-macros/archive/master.zip) or ZIP above.  
+Download macros individually by navigating the repo. Click on the files, e.g. [Switch back to frontmost app.kmmacros](https://github.com/Zettt/km-macros/blob/master/General%20Use/Switch%20back%20to%20frontmost%20app.kmmacros) then click Raw. You can then save your macro locally.
+
 ### Clipboard ###
 
 * Append Selection to Clipboard: Puts selected text on clipboard (⌘C) and appends it to the previous entry.
