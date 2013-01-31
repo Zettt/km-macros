@@ -50,6 +50,14 @@ Macros which use the "Filter Clipboard" action. Possibilities: calculate selecte
 
 * Change expansion mode of a selected TextExpander snippet. It's an example on how to create shortcuts for a menu that is otherwise not reachable via shortcuts. Default shortcut is F1, F2, and F3. Set to separate macro group to be only available in TextExpander!
 
+### Timers ###
+
+Check the time you spent with a certain activity and act accordingly. Maybe you want to limit the time you spend on Twitter by forcibly closing the Twitter app. Or turn off Internet access after you've been online for 10 hours a day.
+
+* Timer Start: Triggered on start of your activity. Add an *app trigger* or *script trigger* for the aforementioned customizations.
+* Timer Stop: Stops the timer and calculates how much time is left. Add actions like "quit app if total amount has been exceeded". Check the [If Then Else](http://www.keyboardmaestro.com/documentation/5/conditions.html) action for what you can do with this.
+* Timer Reset: Resets the timer either manually or at 0:00. This makes sure you can spend the same amount of time with your activity every day.
+
 ### Windows ###
 
 Manipulate windows with Keyboard Maestro:
