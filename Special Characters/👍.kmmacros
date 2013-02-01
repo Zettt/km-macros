@@ -14,7 +14,7 @@
 				<array>
 					<dict>
 						<key>Action</key>
-						<string>ByTyping</string>
+						<string>ByPasting</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -22,9 +22,21 @@
 						<key>MacroActionType</key>
 						<string>InsertText</string>
 						<key>Paste</key>
-						<false/>
+						<true/>
 						<key>Text</key>
-						<string>😢</string>
+						<string>👍</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>Past</key>
+						<integer>0</integer>
+						<key>PastExpression</key>
+						<string>0</string>
 					</dict>
 				</array>
 				<key>IsActive</key>
@@ -39,13 +51,13 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>1A35FED8-3AD8-4C5A-B03C-D12B93DDBF8D</string>
+				<string>E8392B36-D3B6-4B8E-B131-FDAFBD30939F</string>
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>Keyboard Maestro Macros Repo (Special Characters)</string>
+		<string>Special Characters</string>
 		<key>UID</key>
-		<string>8030A669-49A3-4E76-95B8-89BACDEEAEF2</string>
+		<string>AC48F048-1944-4063-AE02-669CBE14E9FD</string>
 	</dict>
 </array>
 </plist>
