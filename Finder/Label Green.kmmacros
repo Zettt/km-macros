@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NewFile</key>
+						<string></string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>(*No color = 0Orange = 1Red = 2Yellow = 3Blue = 4Purple = 5Green = 6Gray = 7
+*)
+
+set mycolor to 6tell application "Finder"	try		repeat with currentFile in items of (get selection)			if label index of currentFile is not mycolor then				set label index of currentFile to mycolor			else				set label index of currentFile to 0			end if		end repeat	on error e		return e	end tryend tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<false/>
+						<key>TrimResultsNew</key>
+						<false/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>Name</key>
+				<string>Label Green</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>22</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6144</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>66055FC4-BBFE-46B0-BA5B-8320B2999588</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Keyboard Maestro Macros Repo</string>
+		<key>UID</key>
+		<string>FDC52ACB-F36A-424D-8746-FA279F0A39A9</string>
+	</dict>
+</array>
+</plist>
