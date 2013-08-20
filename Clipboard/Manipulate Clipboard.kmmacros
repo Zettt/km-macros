@@ -6,7 +6,7 @@
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>IsActive</key>
-		<true/>
+		<false/>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -16,38 +16,48 @@
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
-						<true/>
+						<false/>
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
 						<string>%CurrentClipboard%</string>
 						<key>Variable</key>
-						<string>TheClipboard</string>
+						<string>The Clipboard</string>
 					</dict>
 					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>DeletePastClipboard</string>
-						<key>Past</key>
-						<integer>0</integer>
-						<key>PastExpression</key>
-						<string>0</string>
-					</dict>
-					<dict>
-						<key>Buttons</key>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ClipboardConditionType</key>
+									<string>HasText</string>
+									<key>ClipboardText</key>
+									<string></string>
+									<key>ConditionType</key>
+									<string>Clipboard</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
 						<array>
 							<dict>
-								<key>Button</key>
-								<string>OK</string>
-							</dict>
-							<dict>
-								<key>Button</key>
-								<string>Cancel</string>
-								<key>Cancel</key>
+								<key>IsActive</key>
 								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>Notification</string>
+								<key>SoundName</key>
+								<string></string>
+								<key>Subtitle</key>
+								<string></string>
+								<key>Text</key>
+								<string></string>
+								<key>Title</key>
+								<string>No text in clipboard</string>
 							</dict>
 						</array>
 						<key>IsActive</key>
@@ -55,36 +65,122 @@
 						<key>IsDisclosed</key>
 						<true/>
 						<key>MacroActionType</key>
-						<string>PromptForUserInput</string>
-						<key>Prompt</key>
-						<string></string>
-						<key>ResultButtonVariable</key>
-						<string>Result Button</string>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>DeletePastClipboard</string>
+								<key>PastExpression</key>
+								<string>0</string>
+							</dict>
+							<dict>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+									</dict>
+									<dict>
+										<key>Button</key>
+										<string>Cancel</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string></string>
+								<key>ResultButtonVariable</key>
+								<string>Result Button</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>Your current clipboard:</string>
+								<key>Variables</key>
+								<array>
+									<dict>
+										<key>Default</key>
+										<string>%Variable%The Clipboard%</string>
+										<key>Variable</key>
+										<string>The Clipboard</string>
+									</dict>
+								</array>
+							</dict>
+							<dict>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>JustDisplay</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetClipboardToText</string>
+								<key>StyledText</key>
+								<data>
+								cnRmZAAAAAAD
+								AAAAAgAAAAcA
+								AABUWFQucnRm
+								AQAAAC4cAQAA
+								KwAAAAEAAAAU
+								AQAAe1xydGYx
+								XGFuc2lcYW5z
+								aWNwZzEyNTJc
+								Y29jb2FydGYx
+								MjQ2XGNvY29h
+								c3VicnRmMTEw
+								CntcZm9udHRi
+								bFxmMFxmbmls
+								XGZjaGFyc2V0
+								MCBMdWNpZGFH
+								cmFuZGU7fQp7
+								XGNvbG9ydGJs
+								O1xyZWQyNTVc
+								Z3JlZW4yNTVc
+								Ymx1ZTI1NTt9
+								ClxwYXJkXHR4
+								NTYwXHR4MTEy
+								MFx0eDE2ODBc
+								dHgyMjQwXHR4
+								MjgwMFx0eDMz
+								NjBcdHgzOTIw
+								XHR4NDQ4MFx0
+								eDUwNDBcdHg1
+								NjAwXHR4NjE2
+								MFx0eDY3MjBc
+								cGFyZGlybmF0
+								dXJhbAoKXGYw
+								XGZzMjYgXGNm
+								MCAlVmFyaWFi
+								bGUlVGhlIENs
+								aXBib2FyZCV9
+								AQAAACMAAAAB
+								AAAABwAAAFRY
+								VC5ydGYQAAAA
+								U20TUrYBAAAA
+								AAAAAAAAAA==
+								</data>
+								<key>TargetNamedClipboardRedundantDisplayName</key>
+								<string>Default Clipboard</string>
+								<key>TargetNamedClipboardUID</key>
+								<string>ADC842DE-141E-432C-BEC9-1CF2938923ED</string>
+								<key>TargetUseNamedClipboard</key>
+								<false/>
+								<key>Text</key>
+								<string>%Variable%The Clipboard%</string>
+							</dict>
+						</array>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
-						<key>Title</key>
-						<string>Your current clipboard:</string>
-						<key>Variables</key>
-						<array>
-							<dict>
-								<key>Default</key>
-								<string>%Variable%TheClipboard%</string>
-								<key>Variable</key>
-								<string>TheClipboard</string>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>JustDisplay</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>SetClipboardToText</string>
-						<key>Text</key>
-						<string>%Variable%TheClipboard%</string>
 					</dict>
 					<dict>
 						<key>IsActive</key>
@@ -101,6 +197,8 @@
 				</array>
 				<key>IsActive</key>
 				<true/>
+				<key>ModificationDate</key>
+				<real>398697673.91396999</real>
 				<key>Name</key>
 				<string>Manipulate Clipboard</string>
 				<key>Triggers</key>
@@ -114,12 +212,10 @@
 						<string>HotKey</string>
 						<key>Modifiers</key>
 						<integer>6400</integer>
-						<key>TriggerRepeat</key>
-						<false/>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>DAA40545-AC75-4FAA-8686-2FD88A337CD7</string>
+				<string>C9D3C260-D773-4369-960F-0300A87B9068</string>
 			</dict>
 		</array>
 		<key>Name</key>
