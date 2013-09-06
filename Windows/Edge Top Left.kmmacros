@@ -44,13 +44,28 @@
 						<key>WindowName</key>
 						<string></string>
 					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string>SCREEN( n, Left|Right|Top|Bottom|Width|Height|MidX|MidY, p )
+
+WINDOW( n, Left|Right|Top|Bottom|Width|Height|MidX|MidY )
+</string>
+						<key>Title</key>
+						<string>WINDOW/SCREEN</string>
+					</dict>
 				</array>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>393415371.70008999</real>
+				<real>400156606.34131002</real>
 				<key>Name</key>
-				<string>Move to Top Left</string>
+				<string>Edge Top Left</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -59,7 +74,7 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>3FB93FEA-4CB6-499D-BC11-3C044D03AE1F</string>
+				<string>3C07F1BF-0AEC-4931-9F74-221A94156468</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>

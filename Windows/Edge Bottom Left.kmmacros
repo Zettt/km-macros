@@ -19,68 +19,16 @@
 				<key>Actions</key>
 				<array>
 					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>Comment</string>
-						<key>Text</key>
-						<string></string>
-						<key>Title</key>
-						<string>Calculate window height and new position</string>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>SetVariableToCalculation</string>
-						<key>Text</key>
-						<string>WINDOW(0,Height)</string>
-						<key>UseFormat</key>
-						<false/>
-						<key>Variable</key>
-						<string>WindowHeight</string>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>SetVariableToCalculation</string>
-						<key>Text</key>
-						<string>SCREEN(Main,Height)-WindowHeight</string>
-						<key>UseFormat</key>
-						<false/>
-						<key>Variable</key>
-						<string>WindowYPos</string>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>Comment</string>
-						<key>Text</key>
-						<string></string>
-						<key>Title</key>
-						<string>Move window to new position</string>
-					</dict>
-					<dict>
 						<key>Action</key>
 						<string>MoveWindowTo</string>
 						<key>HeightExpression</key>
-						<string>0</string>
+						<string>(SCREEN(Main,Height)-22)*50%</string>
 						<key>HorizontalExpression</key>
 						<string>SCREEN(Main,Left)</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
-						<false/>
+						<true/>
 						<key>MacroActionType</key>
 						<string>ManipulateWindow</string>
 						<key>Targeting</key>
@@ -88,9 +36,9 @@
 						<key>TargetingType</key>
 						<string>Front</string>
 						<key>VerticalExpression</key>
-						<string>WindowYPos</string>
+						<string>SCREEN(Main,Bottom)-WINDOW(1,Height)</string>
 						<key>WidthExpression</key>
-						<string>0</string>
+						<string>SCREEN(Main,Width)*50%</string>
 						<key>WindowIndexExpression</key>
 						<string>2</string>
 						<key>WindowName</key>
@@ -100,45 +48,24 @@
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
-						<false/>
+						<true/>
 						<key>MacroActionType</key>
 						<string>Comment</string>
 						<key>Text</key>
-						<string></string>
+						<string>SCREEN( n, Left|Right|Top|Bottom|Width|Height|MidX|MidY, p )
+
+WINDOW( n, Left|Right|Top|Bottom|Width|Height|MidX|MidY )
+</string>
 						<key>Title</key>
-						<string>Delete variables</string>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>SetVariableToText</string>
-						<key>Text</key>
-						<string>%Delete%</string>
-						<key>Variable</key>
-						<string>WindowHeight</string>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>SetVariableToText</string>
-						<key>Text</key>
-						<string>%Delete%</string>
-						<key>Variable</key>
-						<string>WindowYPos</string>
+						<string>WINDOW/SCREEN</string>
 					</dict>
 				</array>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>393415716.90777898</real>
+				<real>400156407.44029599</real>
 				<key>Name</key>
-				<string>Move to Bottom Left</string>
+				<string>Edge Bottom Left</string>
 				<key>Triggers</key>
 				<array>
 					<dict>
@@ -147,7 +74,7 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>0F116211-4AF2-48F8-A04D-CF2C52D1A8E8</string>
+				<string>CB86B1C3-987E-47E8-B0C8-2491625B0E49</string>
 			</dict>
 		</array>
 		<key>Modifiers</key>
