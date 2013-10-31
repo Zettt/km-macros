@@ -26,6 +26,18 @@
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
+						<string>10</string>
+						<key>Variable</key>
+						<string>AZ__Window Distance</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
 						<string>%WindowName%1%</string>
 						<key>Variable</key>
 						<string>AZ__Window 1 Name</string>
@@ -100,7 +112,7 @@
 						<key>HeightExpression</key>
 						<string>SCREEN(Main,Height)-22</string>
 						<key>HorizontalExpression</key>
-						<string>SCREEN(Main,MidX)-(AZ__Window 1 Size.x)-2</string>
+						<string>SCREEN(Main,MidX)-(AZ__Window 1 Size.x)-(AZ__Window Distance/2)</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -135,7 +147,7 @@
 						<key>HeightExpression</key>
 						<string>SCREEN(Main,Height)-22</string>
 						<key>HorizontalExpression</key>
-						<string>SCREEN(Main,MidX)+2</string>
+						<string>SCREEN(Main,MidX)+(AZ__Window Distance/2)</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -207,7 +219,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>404902893.38135499</real>
+				<real>404903701.75431103</real>
 				<key>Name</key>
 				<string>Arrange next to each other</string>
 				<key>Triggers</key>
