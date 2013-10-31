@@ -28,31 +28,31 @@
 						<key>Text</key>
 						<string>10</string>
 						<key>Variable</key>
-						<string>AZ__Window Distance</string>
+						<string>Window Distance</string>
 					</dict>
 					<dict>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
-						<true/>
+						<false/>
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
 						<string>%WindowName%1%</string>
 						<key>Variable</key>
-						<string>AZ__Window 1 Name</string>
+						<string>Window 1 Name</string>
 					</dict>
 					<dict>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
-						<true/>
+						<false/>
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
 						<string>%WindowSize%1%</string>
 						<key>Variable</key>
-						<string>AZ__Window 1 Size</string>
+						<string>Window 1 Size</string>
 					</dict>
 					<dict>
 						<key>Conditions</key>
@@ -65,7 +65,7 @@
 									<key>FrontWindowConditionType</key>
 									<string>TitleIsNot</string>
 									<key>FrontWindowTitle</key>
-									<string>%Variable%AZ__Window 1 Name%</string>
+									<string>%Variable%Window 1 Name%</string>
 									<key>IsFrontApplication</key>
 									<true/>
 								</dict>
@@ -86,25 +86,25 @@
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
-						<true/>
+						<false/>
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
 						<string>%WindowName%1%</string>
 						<key>Variable</key>
-						<string>AZ__Window 2 Name</string>
+						<string>Window 2 Name</string>
 					</dict>
 					<dict>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
-						<true/>
+						<false/>
 						<key>MacroActionType</key>
 						<string>SetVariableToText</string>
 						<key>Text</key>
 						<string>%WindowSize%1%</string>
 						<key>Variable</key>
-						<string>AZ__Window 2 Size</string>
+						<string>Window 2 Size</string>
 					</dict>
 					<dict>
 						<key>Action</key>
@@ -112,7 +112,7 @@
 						<key>HeightExpression</key>
 						<string>SCREEN(Main,Height)-22</string>
 						<key>HorizontalExpression</key>
-						<string>SCREEN(Main,MidX)-(AZ__Window 1 Size.x)-(AZ__Window Distance/2)</string>
+						<string>SCREEN(Main,MidX)-(Window 1 Size.x)-(Window Distance/2)</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -133,13 +133,13 @@
 						<key>TargetingType</key>
 						<string>Specific</string>
 						<key>VerticalExpression</key>
-						<string>SCREEN(Main,MidY)-(AZ__Window 1 Size.y/2)</string>
+						<string>SCREEN(Main,MidY)-(Window 1 Size.y/2)</string>
 						<key>WidthExpression</key>
 						<string>SCREEN(Main,Width)*50%</string>
 						<key>WindowIndexExpression</key>
 						<string>2</string>
 						<key>WindowName</key>
-						<string>%Variable%AZ__Window 1 Name%</string>
+						<string>%Variable%Window 1 Name%</string>
 					</dict>
 					<dict>
 						<key>Action</key>
@@ -147,7 +147,7 @@
 						<key>HeightExpression</key>
 						<string>SCREEN(Main,Height)-22</string>
 						<key>HorizontalExpression</key>
-						<string>SCREEN(Main,MidX)+(AZ__Window Distance/2)</string>
+						<string>SCREEN(Main,MidX)+(Window Distance/2)</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -159,13 +159,13 @@
 						<key>TargetingType</key>
 						<string>Front</string>
 						<key>VerticalExpression</key>
-						<string>SCREEN(Main,MidY)-(AZ__Window 2 Size.y/2)</string>
+						<string>SCREEN(Main,MidY)-(Window 2 Size.y/2)</string>
 						<key>WidthExpression</key>
 						<string>SCREEN(Main,Width)*50%</string>
 						<key>WindowIndexExpression</key>
 						<string>2</string>
 						<key>WindowName</key>
-						<string>%Variable%AZ__Window 2 Name%</string>
+						<string>%Variable%Window 2 Name%</string>
 					</dict>
 					<dict>
 						<key>IsActive</key>
@@ -177,7 +177,7 @@
 						<key>Text</key>
 						<string>%Delete%</string>
 						<key>Variable</key>
-						<string>AZ__Window 1 Name</string>
+						<string>Window Distance</string>
 					</dict>
 					<dict>
 						<key>IsActive</key>
@@ -189,7 +189,7 @@
 						<key>Text</key>
 						<string>%Delete%</string>
 						<key>Variable</key>
-						<string>AZ__Window 1 Size</string>
+						<string>Window 1 Name</string>
 					</dict>
 					<dict>
 						<key>IsActive</key>
@@ -201,7 +201,7 @@
 						<key>Text</key>
 						<string>%Delete%</string>
 						<key>Variable</key>
-						<string>AZ__Window 2 Name</string>
+						<string>Window 1 Size</string>
 					</dict>
 					<dict>
 						<key>IsActive</key>
@@ -213,13 +213,25 @@
 						<key>Text</key>
 						<string>%Delete%</string>
 						<key>Variable</key>
-						<string>AZ__Window 2 Size</string>
+						<string>Window 2 Name</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%Delete%</string>
+						<key>Variable</key>
+						<string>Window 2 Size</string>
 					</dict>
 				</array>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>404903701.75431103</real>
+				<real>404904078.879004</real>
 				<key>Name</key>
 				<string>Arrange next to each other</string>
 				<key>Triggers</key>
