@@ -349,7 +349,7 @@ Notes:
 						<key>Append</key>
 						<false/>
 						<key>Destination</key>
-						<string>/Users/zettt/Dropbox/Photos/What Was I Doing/%Variable%WWID Filename%.png</string>
+						<string>/Users/[you]/Dropbox/Photos/What Was I Doing/%Variable%WWID Filename%.png</string>
 						<key>Encoding</key>
 						<string>UTF8</string>
 						<key>Format</key>
@@ -397,7 +397,7 @@ Notes:
 					</dict>
 					<dict>
 						<key>Destination</key>
-						<string>/Users/zettt/Dropbox/Photos/What Was I Doing/%Variable%WWID Dated Folder%</string>
+						<string>/Users/[you]/Dropbox/Photos/What Was I Doing/%Variable%WWID Dated Folder%</string>
 						<key>IsActive</key>
 						<false/>
 						<key>IsDisclosed</key>
@@ -409,7 +409,7 @@ Notes:
 						<key>Append</key>
 						<false/>
 						<key>Destination</key>
-						<string>/Users/zettt/Dropbox/Photos/What Was I Doing/%Variable%WWID Dated Folder%/%Variable%WWID Filename%.png</string>
+						<string>/Users/[you]/Dropbox/Photos/What Was I Doing/%Variable%WWID Dated Folder%/%Variable%WWID Filename%.png</string>
 						<key>Encoding</key>
 						<string>UTF8</string>
 						<key>Format</key>
