@@ -6,7 +6,7 @@
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>IsActive</key>
-		<true/>
+		<false/>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -31,14 +31,14 @@
 						<integer>0</integer>
 						<key>ClickCount</key>
 						<integer>1</integer>
+						<key>DisplayMatches</key>
+						<false/>
 						<key>DragHorizontalPosition</key>
 						<string>0</string>
 						<key>DragVerticalPosition</key>
 						<string>0</string>
 						<key>Fuzz</key>
 						<integer>0</integer>
-						<key>HorizontalPosition</key>
-						<integer>-100</integer>
 						<key>HorizontalPositionExpression</key>
 						<string>-100</string>
 						<key>IsActive</key>
@@ -57,8 +57,8 @@
 						<string>TopRight</string>
 						<key>RestoreMouseLocation</key>
 						<true/>
-						<key>VerticalPosition</key>
-						<integer>100</integer>
+						<key>StopOnFailure</key>
+						<false/>
 						<key>VerticalPositionExpression</key>
 						<string>100</string>
 					</dict>
@@ -69,8 +69,44 @@
 						<false/>
 						<key>MacroActionType</key>
 						<string>Pause</string>
-						<key>Seconds</key>
-						<real>1</real>
+						<key>Time</key>
+						<string>2</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string></string>
+						<key>Title</key>
+						<string>Print as PDF</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>35</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
 						<key>Time</key>
 						<string>1</string>
 						<key>TimeOutAbortsMacro</key>
@@ -97,36 +133,6 @@
 						<false/>
 						<key>MacroActionType</key>
 						<string>Pause</string>
-						<key>Seconds</key>
-						<real>1</real>
-						<key>Time</key>
-						<string>1</string>
-						<key>TimeOutAbortsMacro</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>KeyCode</key>
-						<integer>35</integer>
-						<key>MacroActionType</key>
-						<string>SimulateKeystroke</string>
-						<key>Modifiers</key>
-						<integer>256</integer>
-						<key>ReleaseAll</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>Pause</string>
-						<key>Seconds</key>
-						<real>1</real>
 						<key>Time</key>
 						<string>1</string>
 						<key>TimeOutAbortsMacro</key>
@@ -152,6 +158,52 @@
 						<key>IsDisclosed</key>
 						<false/>
 						<key>KeyCode</key>
+						<integer>48</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>48</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Paste</key>
+						<true/>
+						<key>Text</key>
+						<string>iTunes
+Invoice
+%ICUDateTime%yyyy%
+%ICUDateTime%MM%
+</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
 						<integer>1</integer>
 						<key>MacroActionType</key>
 						<string>SimulateKeystroke</string>
@@ -163,6 +215,8 @@
 				</array>
 				<key>IsActive</key>
 				<true/>
+				<key>ModificationDate</key>
+				<real>421341739.18319798</real>
 				<key>Name</key>
 				<string>Print iTunes Receipt</string>
 				<key>Triggers</key>
@@ -176,12 +230,10 @@
 						<string>HotKey</string>
 						<key>Modifiers</key>
 						<integer>6400</integer>
-						<key>TriggerRepeat</key>
-						<false/>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>07502489-1F54-40E4-ACEB-9BB0DB94C256</string>
+				<string>FC61B03D-1B76-49A1-8D43-7F7099C7E4F3</string>
 			</dict>
 		</array>
 		<key>Name</key>
