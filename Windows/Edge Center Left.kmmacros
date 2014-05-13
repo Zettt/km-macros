@@ -36,7 +36,7 @@
 						<key>TargetingType</key>
 						<string>Front</string>
 						<key>VerticalExpression</key>
-						<string>(SCREEN(Main,Bottom)-WINDOW(1,Height))/2</string>
+						<string>((SCREEN(Main,Bottom)-WINDOW(1,Height))/2)+11</string>
 						<key>WidthExpression</key>
 						<string>SCREEN(Main,Width)*50%</string>
 						<key>WindowIndexExpression</key>
@@ -63,7 +63,7 @@ WINDOW( n, Left|Right|Top|Bottom|Width|Height|MidX|MidY )
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>400156613.59081298</real>
+				<real>421706963.402044</real>
 				<key>Name</key>
 				<string>Edge Center Left</string>
 				<key>Triggers</key>
