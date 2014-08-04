@@ -6,7 +6,7 @@
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>IsActive</key>
-		<true/>
+		<false/>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -234,7 +234,7 @@ end tell</string>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>420983355.06478</real>
+				<real>428838390.96001703</real>
 				<key>Name</key>
 				<string>Toggle Repeat</string>
 				<key>Triggers</key>
@@ -247,33 +247,17 @@ end tell</string>
 						<key>MacroTriggerType</key>
 						<string>HotKey</string>
 						<key>Modifiers</key>
-						<integer>256</integer>
+						<integer>768</integer>
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>95FBAD0D-1D9D-4139-893A-AC2503C78DEC</string>
+				<string>8DFCE10F-DC6E-4430-90C3-8308C929DEB6</string>
 			</dict>
 		</array>
 		<key>Name</key>
-		<string>iTunes</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.apple.iTunes</string>
-					<key>Name</key>
-					<string>iTunes</string>
-					<key>NewFile</key>
-					<string>/Applications/iTunes.app</string>
-				</dict>
-			</array>
-		</dict>
+		<string>Keyboard Maestro Macros Repo</string>
 		<key>UID</key>
-		<string>EE085820-1F36-431F-8DE4-AEFBC8DF06BF</string>
+		<string>FDC52ACB-F36A-424D-8746-FA279F0A39A9</string>
 	</dict>
 </array>
 </plist>
