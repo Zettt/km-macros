@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>2</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Calculation</string>
+									<key>Text</key>
+									<string>SCREENCOUNT ≠ Old Screen Count</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>Conditions</key>
+								<dict>
+									<key>ConditionList</key>
+									<array>
+										<dict>
+											<key>ConditionType</key>
+											<string>Calculation</string>
+											<key>Text</key>
+											<string>SCREENCOUNT = 1</string>
+										</dict>
+									</array>
+									<key>ConditionListMatch</key>
+									<string>All</string>
+								</dict>
+								<key>ElseActions</key>
+								<array>
+									<dict>
+										<key>IsActive</key>
+										<true/>
+										<key>IsDisclosed</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>SelectMenuItem</string>
+										<key>Menu</key>
+										<array>
+											<string>Window</string>
+											<string>Show Viewers on Second Display</string>
+										</array>
+										<key>TargetApplication</key>
+										<dict>
+											<key>BundleIdentifier</key>
+											<string>com.apple.FinalCut</string>
+											<key>Name</key>
+											<string>Final Cut Pro</string>
+											<key>NewFile</key>
+											<string>/Applications/Final Cut Pro.app</string>
+										</dict>
+										<key>TargetingType</key>
+										<string>Specific</string>
+									</dict>
+								</array>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>IfThenElse</string>
+								<key>ThenActions</key>
+								<array>
+									<dict>
+										<key>IsActive</key>
+										<true/>
+										<key>IsDisclosed</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>SelectMenuItem</string>
+										<key>Menu</key>
+										<array>
+											<string>Window</string>
+											<string>Revert to Original Layout</string>
+										</array>
+										<key>TargetApplication</key>
+										<dict>
+											<key>BundleIdentifier</key>
+											<string>com.apple.FinalCut</string>
+											<key>Name</key>
+											<string>Final Cut Pro</string>
+											<key>NewFile</key>
+											<string>/Applications/Final Cut Pro.app</string>
+										</dict>
+										<key>TargetingType</key>
+										<string>Specific</string>
+									</dict>
+								</array>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToCalculation</string>
+						<key>Text</key>
+						<string>SCREENCOUNT</string>
+						<key>UseFormat</key>
+						<false/>
+						<key>Variable</key>
+						<string>Old Screen Count</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>430652808.536731</real>
+				<key>Name</key>
+				<string>Optimize Display</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+					<dict>
+						<key>Application</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.apple.FinalCut</string>
+							<key>Name</key>
+							<string>Final Cut Pro</string>
+							<key>NewFile</key>
+							<string>/Applications/Final Cut Pro.app</string>
+						</dict>
+						<key>FireType2</key>
+						<string>Activate</string>
+						<key>MacroTriggerType</key>
+						<string>Application</string>
+						<key>RepeatTime</key>
+						<integer>60</integer>
+						<key>Target</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>536B788B-EA9C-4499-A2FC-FF6DDE68B796</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Final Cut Pro X</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.FinalCut</string>
+					<key>Name</key>
+					<string>Final Cut Pro.app</string>
+					<key>NewFile</key>
+					<string>/Applications/Final Cut Pro.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>BBCC513B-2976-46A2-9582-D01FC7822129</string>
+	</dict>
+</array>
+</plist>
