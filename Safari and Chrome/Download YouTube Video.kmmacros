@@ -51,232 +51,198 @@
 						</array>
 					</dict>
 					<dict>
-						<key>ActionName</key>
-						<string>Delete Watch Later Parameters</string>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>Comment</string>
-								<key>Text</key>
-								<string>If you experience problems with this macro please try to replace the variables here with *your* actual list (Watch Later) or some other playlist' ID's here. youtube-dl doesn't work so well with those.</string>
-								<key>Title</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>Conditions</key>
-								<dict>
-									<key>ConditionList</key>
-									<array>
-										<dict>
-											<key>ConditionType</key>
-											<string>Variable</string>
-											<key>Variable</key>
-											<string>YTVideoURL</string>
-											<key>VariableConditionType</key>
-											<string>Contains</string>
-											<key>VariableValue</key>
-											<string>&amp;list=WL</string>
-										</dict>
-									</array>
-									<key>ConditionListMatch</key>
-									<string>All</string>
-								</dict>
-								<key>ElseActions</key>
-								<array/>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>IfThenElse</string>
-								<key>ThenActions</key>
-								<array>
-									<dict>
-										<key>Action</key>
-										<string>IgnoreCaseString</string>
-										<key>IsActive</key>
-										<true/>
-										<key>IsDisclosed</key>
-										<true/>
-										<key>MacroActionType</key>
-										<string>SearchReplaceVariable</string>
-										<key>Replace</key>
-										<string></string>
-										<key>Search</key>
-										<string>&amp;list=WL</string>
-										<key>Variable</key>
-										<string>YTVideoURL</string>
-									</dict>
-								</array>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>Conditions</key>
-								<dict>
-									<key>ConditionList</key>
-									<array>
-										<dict>
-											<key>ConditionType</key>
-											<string>Variable</string>
-											<key>Variable</key>
-											<string>YTVideoURL</string>
-											<key>VariableConditionType</key>
-											<string>Contains</string>
-											<key>VariableValue</key>
-											<string>&amp;list=WL</string>
-										</dict>
-									</array>
-									<key>ConditionListMatch</key>
-									<string>All</string>
-								</dict>
-								<key>ElseActions</key>
-								<array/>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>IfThenElse</string>
-								<key>ThenActions</key>
-								<array>
-									<dict>
-										<key>Action</key>
-										<string>IgnoreCaseString</string>
-										<key>IsActive</key>
-										<true/>
-										<key>IsDisclosed</key>
-										<true/>
-										<key>MacroActionType</key>
-										<string>SearchReplaceVariable</string>
-										<key>Replace</key>
-										<string></string>
-										<key>Search</key>
-										<string>&amp;list=WL</string>
-										<key>Variable</key>
-										<string>YTVideoURL</string>
-									</dict>
-								</array>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-						</array>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
 						<true/>
 						<key>MacroActionType</key>
-						<string>Group</string>
+						<string>Comment</string>
+						<key>Text</key>
+						<string>If you experience problems with this macro please try to replace the variables here with *your* actual list (Watch Later) or some other playlist' ID's here. youtube-dl doesn't work so well with those.
+
+These are URL parameters, by the way.</string>
+						<key>Title</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>YTVideoURL</string>
+									<key>VariableConditionType</key>
+									<string>Contains</string>
+									<key>VariableValue</key>
+									<string>&amp;list=WLLONGNUMBER</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseString</string>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>SearchReplaceVariable</string>
+								<key>Replace</key>
+								<string></string>
+								<key>Search</key>
+								<string>&amp;list=WLLONGNUMBER</string>
+								<key>Variable</key>
+								<string>YTVideoURL</string>
+							</dict>
+						</array>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
 					</dict>
 					<dict>
-						<key>ActionName</key>
-						<string>Download</string>
-						<key>Actions</key>
-						<array>
-							<dict>
-								<key>ActionName</key>
-								<string>Set YTVideoTitle variable</string>
-								<key>DisplayKind</key>
-								<string>Variable</string>
-								<key>IncludeStdErr</key>
-								<true/>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>ExecuteShellScript</string>
-								<key>Path</key>
-								<string></string>
-								<key>Text</key>
-								<string>echo `/usr/local/bin/youtube-dl --get-title $KMVAR_YTVideoURL`</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-								<key>TrimResults</key>
-								<false/>
-								<key>TrimResultsNew</key>
-								<false/>
-								<key>UseText</key>
-								<true/>
-								<key>Variable</key>
-								<string>YTVideoTitle</string>
-							</dict>
-							<dict>
-								<key>ActionName</key>
-								<string>Notify: download started</string>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>Notification</string>
-								<key>SoundName</key>
-								<string></string>
-								<key>Subtitle</key>
-								<string></string>
-								<key>Text</key>
-								<string>"%Variable%YTVideoTitle%" download started.</string>
-								<key>Title</key>
-								<string>%ExecutingMacro%</string>
-							</dict>
-							<dict>
-								<key>DisplayKind</key>
-								<string>Briefly</string>
-								<key>IncludeStdErr</key>
-								<true/>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
-								<key>MacroActionType</key>
-								<string>ExecuteShellScript</string>
-								<key>Path</key>
-								<string></string>
-								<key>Text</key>
-								<string>/usr/local/bin/youtube-dl --format mp4 --output "/Users/zettt/Downloads/%(uploader)s %(title)s.%(ext)s" --quiet $KMVAR_YTVideoURL</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-								<key>TrimResults</key>
-								<false/>
-								<key>TrimResultsNew</key>
-								<false/>
-								<key>UseText</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>ActionName</key>
-								<string>Notify: download finished</string>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>Notification</string>
-								<key>SoundName</key>
-								<string></string>
-								<key>Subtitle</key>
-								<string></string>
-								<key>Text</key>
-								<string>"%Variable%YTVideoTitle%" download finished.</string>
-								<key>Title</key>
-								<string>%ExecutingMacro%</string>
-							</dict>
-						</array>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>YTVideoURL</string>
+									<key>VariableConditionType</key>
+									<string>Contains</string>
+									<key>VariableValue</key>
+									<string>&amp;list=WLDLONGNUMBER</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
 						<true/>
 						<key>MacroActionType</key>
-						<string>Group</string>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseString</string>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>SearchReplaceVariable</string>
+								<key>Replace</key>
+								<string></string>
+								<key>Search</key>
+								<string>&amp;list=WLDLONGNUMBER</string>
+								<key>Variable</key>
+								<string>YTVideoURL</string>
+							</dict>
+						</array>
 						<key>TimeOutAbortsMacro</key>
 						<true/>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>printf "$(/usr/local/bin/youtube-dl --get-title $KMVAR_YTVideoURL)"</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<false/>
+						<key>TrimResultsNew</key>
+						<false/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>YTVideoTitle</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>Notification</string>
+						<key>SoundName</key>
+						<string></string>
+						<key>Subtitle</key>
+						<string>Started</string>
+						<key>Text</key>
+						<string>%Variable%YTVideoTitle%</string>
+						<key>Title</key>
+						<string>Video Download</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Briefly</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>/usr/local/bin/youtube-dl --format "(mp4)[height&lt;=?1080]+bestaudio/best" --output "/Users/zettt/Downloads/%(uploader)s %(title)s.%(ext)s" --quiet $KMVAR_YTVideoURL</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<false/>
+						<key>TrimResultsNew</key>
+						<false/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>Notification</string>
+						<key>SoundName</key>
+						<string></string>
+						<key>Subtitle</key>
+						<string>Finished</string>
+						<key>Text</key>
+						<string>%Variable%YTVideoTitle%</string>
+						<key>Title</key>
+						<string>Video Download</string>
 					</dict>
 					<dict>
 						<key>IsActive</key>
@@ -316,11 +282,11 @@
 					</dict>
 				</array>
 				<key>CreationDate</key>
-				<real>463645838.55652499</real>
+				<real>466621295.92034501</real>
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>463646094.27191103</real>
+				<real>466621356.83188301</real>
 				<key>Name</key>
 				<string>Download YouTube Video</string>
 				<key>Triggers</key>
@@ -341,7 +307,7 @@
 					</dict>
 				</array>
 				<key>UID</key>
-				<string>8630E290-D5B3-453D-AA0E-214260D37179</string>
+				<string>5D483240-7F07-4EDF-A2C2-A519BB06E455</string>
 			</dict>
 		</array>
 		<key>Name</key>
