@@ -13,6 +13,18 @@
 				<key>Actions</key>
 				<array>
 					<dict>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string>Macro creator: Andreas Zeitler - zCasting 3000 - contact@zcasting3000.com
+
+This macro is really really really advanced! If you haven't checked out Safari/Chrome automation in Keyboard Maestro, please do that. This macro makes use of it. If some form indices are not indexed by your specific version, and it doesn't work, then it's not my fault, nor is it Keyboard Maestro's.
+
+You can contact me, and ask for help though.</string>
+						<key>Title</key>
+						<string>Heads Up</string>
+					</dict>
+					<dict>
 						<key>Buttons</key>
 						<array>
 							<dict>
@@ -342,7 +354,7 @@
 				<key>CreationDate</key>
 				<real>485366585.97138703</real>
 				<key>ModificationDate</key>
-				<real>485369306.71677601</real>
+				<real>485417475.78085297</real>
 				<key>Name</key>
 				<string>Share Xing Status Message</string>
 				<key>Triggers</key>
