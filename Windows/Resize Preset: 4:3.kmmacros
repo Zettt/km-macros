@@ -19,16 +19,6 @@
 				<key>Actions</key>
 				<array>
 					<dict>
-						<key>IsActive</key>
-						<false/>
-						<key>MacroActionType</key>
-						<string>SetVariableToText</string>
-						<key>Text</key>
-						<string>%WindowSize%1%</string>
-						<key>Variable</key>
-						<string>WindowSize</string>
-					</dict>
-					<dict>
 						<key>Action</key>
 						<string>ResizeWindowTo</string>
 						<key>HeightExpression</key>
@@ -50,33 +40,11 @@
 						<key>WindowName</key>
 						<string></string>
 					</dict>
-					<dict>
-						<key>Action</key>
-						<string>ResizeWindowBy</string>
-						<key>HeightExpression</key>
-						<string>300</string>
-						<key>HorizontalExpression</key>
-						<string>125</string>
-						<key>MacroActionType</key>
-						<string>ManipulateWindow</string>
-						<key>Targeting</key>
-						<string>FrontWindow</string>
-						<key>TargetingType</key>
-						<string>Front</string>
-						<key>VerticalExpression</key>
-						<string>125</string>
-						<key>WidthExpression</key>
-						<string>300</string>
-						<key>WindowIndexExpression</key>
-						<string>2</string>
-						<key>WindowName</key>
-						<string></string>
-					</dict>
 				</array>
 				<key>CreationDate</key>
 				<real>489673967.509929</real>
 				<key>ModificationDate</key>
-				<real>489674390.637573</real>
+				<real>489674532.52637702</real>
 				<key>Name</key>
 				<string>Resize Preset: 4:3</string>
 				<key>Triggers</key>
